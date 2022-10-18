@@ -9,11 +9,11 @@ let index = 1;
 const animate =()=>{
     
     if(dy !== 0){
-        player.style.backgroundImage = `url('../img/adventure_girl/png/Jump(${index++}).png')`;
+        player.style.backgroundImage = `url('img/adventure_girl/png/Jump(${index++}).png')`;
     }else if(dx !==0){
-        player.style.backgroundImage = `url('../img/adventure_girl/png/Run(${index++}).png')`;
+        player.style.backgroundImage = `url('img/adventure_girl/png/Run(${index++}).png')`;
     }else{
-        player.style.backgroundImage = `url('../img/adventure_girl/png/Idle(${index++}).png')`;
+        player.style.backgroundImage = `url('img/adventure_girl/png/Idle(${index++}).png')`;
     }
     if(index>8 && dx !==0){
         index=1;
